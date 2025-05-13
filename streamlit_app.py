@@ -5,7 +5,7 @@ import plotly.express as px
 # 데이터 로드
 @st.cache_data
 def load_data():
-    df = pd.read_csv("world-happiness-2024.csv")
+    df = pd.read_csv("world-happiness_2024.csv")
     df.columns = [col.replace('Explained by: ', '').replace(' ', '_').lower() for col in df.columns]
     df = df.rename(columns={'country_name': 'Country', 'ladder_score': 'Happiness_Score'})
     return df
