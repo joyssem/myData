@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
+ 
 # 데이터 로드
 @st.cache_data
 def load_data():
